@@ -1,6 +1,6 @@
 Message = input("Please insert str:")
 Reverse_Message = ""
-x = 5
+
 N = len(Message)-1
 print(N)
 while N>=0:
