@@ -18,7 +18,6 @@ def Decimal_to_Binary():
         Reverse_Binary = Reverse_Binary+Binary[N]
         N-=1
     
-    
     label.configure(text=f"Your decimal number :{Reverse_Binary}")
     
 
@@ -35,7 +34,6 @@ def Binary_to_Decimal():
         if Reversed_Number[i] == "1":
             Decimal += 2**i
     
-
     label.configure(text=f"Your binary number :{Decimal}")
 
 
@@ -61,9 +59,11 @@ font=('consolas', 15, 'bold'),
 fg='#00FF00',bg='#999999',relief=RAISED,bd=10,)
 label.pack() #Label.place(x=0, y=0) เพื่อแสดงมุมซ้าย
 
+#ป้อนข้อมูล
 entry = Entry(window, font=("Arial", 15))
 entry.pack(pady=20)
 
+#ปุ่มกดsubmit
 submit_button = Button(window, text="submit", command=input_Binary_or_Deciaml)
 submit_button.pack()
 
