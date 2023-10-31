@@ -17,4 +17,5 @@ def calculat_grade(n):
 if calculat_grade(A) == "A":
   print("A")
 else:
+  #เงื่อนไขแบบย่อ
   print(calculat_grade(A)+"+") if A%10 >= 5 else print(calculat_grade(A))
