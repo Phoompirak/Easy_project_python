@@ -12,7 +12,7 @@
 A = int(input())
 
 def calculat_grade(n):
-  B="FFFfFFDCBA"
+  B="FFFFFFDCBA"
   return B[n//10]
 if calculat_grade(A) == "A":
   print("A")
