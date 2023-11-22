@@ -9,13 +9,18 @@
 ผู้ที่ได้คะแนนต่ำกว่า 60 ลงไปจะได้เกรด F
 """
 
-A = int(input())
+def grading(average):
+  if average < 0:
+    return
+  grade = "FFFFFDCBAAA"
+  if average % 10 >= 5:
+    if grade[average // 10] == "A":
+      return "A"
+    elif grade[average // 10] == "F":
+      return "F"
+    return grade[average // 10] + "+"
+  else:
+    return grade[average // 10]
 
-def calculat_grade(n):
-  B="FFFFFFDCBA"
-  return B[n//10]
-if calculat_grade(A) == "A":
-  print("A")
-else:
-  #เงื่อนไขแบบย่อ
-  print(calculat_grade(A)+"+") if A%10 >= 5 else print(calculat_grade(A))
+
+print(grading(sum([int(input()) for i in range(3)])))
